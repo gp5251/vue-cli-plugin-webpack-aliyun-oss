@@ -13,5 +13,7 @@ module.exports = (api, options, rootOptions) => {
     }
   };
 
-  api.extendPackage(pkg);
+	api.extendPackage(pkg);
+	
+	api.exitLog('vue-cli-plugin-webpack-aliyun-oss configuration done');
 };

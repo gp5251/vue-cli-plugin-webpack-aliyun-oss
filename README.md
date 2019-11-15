@@ -31,17 +31,6 @@ module.exports = {
 	  dist: '/tmp', 				// oss上传路径，默认为 /tmp
   	from: '', 						// 默认为 vue.config.js outputDir 下的所有文件
   	buildRoot: '', 				// 默认与 vue.config.js outputDir 一致，如果设置setOssPath，此项可忽略
-  	setOssPath(filePath){
-      // 如果需要为每个文件单独设置上传路径可配置
-      // filePath为当前文件路径，函数应该返回路径+文件名，如/new/path/to/file.js，则最终上传路径为 /tmp/new/path/to/file.js，其中/tmp来自于dist
-      return /new/path/to/file.js
-    },
-  	setHeaders(filePath) {
-      // some operations to filePath
-      return {
-        'Cache-Control': 'max-age=31536000'
-      }
-    }，
   	test: false 					// 仅仅显示上传文件，不做上传操作
 }
 ```

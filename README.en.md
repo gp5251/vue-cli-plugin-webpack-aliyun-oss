@@ -26,11 +26,10 @@ module.exports = {
     accessKeyId: 'accessKeyId',
     accessKeySecret: 'accessKeySecret',
     bucket: 'bucket',
-  	dist: '/tmp', // path in oss
-  	setOssPath(){
-      //
-    },
-  	// ... or any other options to webpack-aliyun-oss
+	  dist: '/tmp', 				// path in oss, defaults to /tmp
+  	from: '', 						// defaults to the outputDir defined in vue.config.js.
+  	buildRoot: '', 				// defaults to the outputDir defined in vue.config.js.
+  	test: false 					// just show the files to be uploaded
 }
 ```
 
