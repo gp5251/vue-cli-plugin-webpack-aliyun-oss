@@ -1,28 +1,28 @@
 module.exports = [
-  {
-    name: 'accessKeyId',
-    type: 'input',
-    message: 'please input your accessKeyId'
-  },
-  {
-    name: 'accessKeySecret',
-    type: 'input',
-    message: 'please input your accessKeySecret'
-  },
-  {
-    name: 'region',
-    type: 'input',
-    message: 'please input your region'
-  },
-  {
-    name: 'bucket',
-    type: 'input',
-    message: 'please input your bucket'
-  },
-  {
-    name: 'dist',
-    type: 'input',
-    message: 'what is the path do you want to upload to? defaults to /tmp.',
-    default: '/tmp'
-  }
+	{
+		name: 'accessKeyId',
+		type: 'input',
+		message: '请输入 accessKeyId'
+	},
+	{
+		name: 'accessKeySecret',
+		type: 'input',
+		message: '请输入 accessKeySecret'
+	},
+	{
+		name: 'region',
+		type: 'input',
+		message: '请输入 region'
+	},
+	{
+		name: 'bucket',
+		type: 'input',
+		message: '请输入 bucket'
+	},
+	{
+		name: 'dist',
+		type: 'input',
+		message: '您希望上传到oss哪个路径下? 默认为 /tmp',
+		default: '/tmp'
+	}
 ]

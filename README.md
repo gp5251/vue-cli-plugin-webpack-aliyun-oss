@@ -19,19 +19,20 @@ vue add webpack-aliyun-oss
 执行上面代码后，终端会问你要输入 `accessKeyId`, `accessKeySecret`, `region` and  `bucket`. 这些会被用来配置你的阿里云oss，并写入到你项目跟目录下的.config.js文件。你也可以在完成配置后随时修改这个文件。
 
 
+插件支持所有 webpack-aliyun-oss 的配置参数，这里只显示必须参数
+如：可增加 from 来自定义上传文件、 修改 test 为 true 仅仅显示上传文件 等
 
 .confgi.js 文件看起来是这样:
 
 ```js
 module.exports = {
-    region: 'region',
-    accessKeyId: 'accessKeyId',
-    accessKeySecret: 'accessKeySecret',
-    bucket: 'bucket',
-	  dist: '/tmp', 				// oss上传路径，默认为 /tmp
-  	from: '', 						// 默认为 vue.config.js outputDir 下的所有文件
-  	buildRoot: '', 				// 默认与 vue.config.js outputDir 一致，如果设置setOssPath，此项可忽略
-  	test: false 					// 仅仅显示上传文件，不做上传操作
+	region: 'c',
+	accessKeyId: 'a',
+	accessKeySecret: 'b',
+	bucket: 'd',
+	dist: '/test',
+	buildRoot: './dist',
+	test: true
 }
 ```
 

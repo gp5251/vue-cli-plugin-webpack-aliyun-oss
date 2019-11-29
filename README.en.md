@@ -22,14 +22,13 @@ a .config.js file will look like this:
 
 ```js
 module.exports = {
-    region: 'region',
-    accessKeyId: 'accessKeyId',
-    accessKeySecret: 'accessKeySecret',
-    bucket: 'bucket',
-	  dist: '/tmp', 				// path in oss, defaults to /tmp
-  	from: '', 						// defaults to the outputDir defined in vue.config.js.
-  	buildRoot: '', 				// defaults to the outputDir defined in vue.config.js.
-  	test: false 					// just show the files to be uploaded
+	region: 'c',
+	accessKeyId: 'a',
+	accessKeySecret: 'b',
+	bucket: 'd',
+	dist: '/test',
+	buildRoot: './dist',
+	test: true
 }
 ```
 
