@@ -28,7 +28,7 @@ module.exports = (api, ossOptions) => {
 			upload: "vue-cli-service upload"
 		},
 		devDependencies: {
-			"webpack-aliyun-oss": "^0.2.3"
+			"webpack-aliyun-oss": "^0.3.0"
 		}
 	};
 
