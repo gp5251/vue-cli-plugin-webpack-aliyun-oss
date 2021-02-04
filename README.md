@@ -22,7 +22,7 @@ vue add webpack-aliyun-oss
 插件支持所有 [webpack-aliyun-oss](https://www.npmjs.com/package/webpack-aliyun-oss) 的配置参数，这里只显示必须参数
 如：可增加 `from` 来自定义上传范围、 修改 `test` 为 true 仅仅显示上传日志 等
 
-.confgi.js 文件看起来是这样:
+.config.js 文件看起来是这样:
 
 ```js
 module.exports = {
