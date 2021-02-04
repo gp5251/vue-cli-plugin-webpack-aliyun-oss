@@ -16,11 +16,11 @@ vue add webpack-aliyun-oss
 
 ### 使用
 
-执行上面代码后，终端会问你要输入 `accessKeyId`, `accessKeySecret`, `region` and  `bucket`. 这些会被用来配置你的阿里云oss，并写入到你项目跟目录下的.config.js文件。你也可以在完成配置后随时修改这个文件。
+执行上面代码后，终端会问你要输入 `accessKeyId`, `accessKeySecret`, `region` and  `bucket`. 这些会被用来配置你的阿里云oss，并写入到项目根目录下的.config.js文件。你也可以在完成配置后随时修改这个文件。
 
 
-插件支持所有 webpack-aliyun-oss 的配置参数，这里只显示必须参数
-如：可增加 from 来自定义上传文件、 修改 test 为 true 仅仅显示上传文件 等
+插件支持所有 [webpack-aliyun-oss](https://www.npmjs.com/package/webpack-aliyun-oss) 的配置参数，这里只显示必须参数
+如：可增加 `from` 来自定义上传范围、 修改 `test` 为 true 仅仅显示上传日志 等
 
 .confgi.js 文件看起来是这样:
 
