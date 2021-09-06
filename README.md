@@ -43,6 +43,6 @@ module.exports = {
 ```sh
 npm run upload
 # or
-yarn run upload
+yarn upload
 ```
 

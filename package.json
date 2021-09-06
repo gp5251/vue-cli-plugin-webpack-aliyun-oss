@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-webpack-aliyun-oss",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "vue cli plugin to upload your assets to aliyun oss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +18,8 @@
   "homepage": "https://github.com/gp5251/vue-cli-plugin-webpack-aliyun-oss",
   "keywords": [
     "vue",
-		"cli",
-		"plugin",
+    "cli",
+    "plugin",
     "webpack",
     "aliyun",
     "oss"

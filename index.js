@@ -5,7 +5,9 @@ module.exports = (api, {outputDir}) => {
 	api.chainWebpack(webpackConfig => {
 		const context = process.env.VUE_CLI_CONTEXT || process.cwd();
 		const config = getConfig(context, outputDir);
-		webpackConfig.plugin("webpack-aliyun-oss").use(WebpackAliyunOss, [config]);
+
+		if (process.env.NODE_ENV === 'production')
+			webpackConfig.plugin("webpack-aliyun-oss").use(WebpackAliyunOss, [config]);
 	});
 
 	api.registerCommand("upload", ({from = outputDir}) => {
